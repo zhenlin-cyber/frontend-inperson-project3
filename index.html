@@ -46,8 +46,41 @@
             <p>Let's work together!</p>
             
             <form class="contact-form">
-                <!-- TODO: Add HTML5 form inputs here -->
-                <!-- Students will add various input types during class -->
+                <!-- Text input -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- Email input (HTML5) -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Phone input (HTML5) -->
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <!-- Date input (HTML5) -->
+                <label for="start-date">Preferred Start Date:</label>
+                <input type="date" id="start-date" name="start-date">
+
+                <!-- Number input -->
+                <label for="budget">Budget (USD):</label>
+                <input type="number" id="budget" name="budget" min="0" step="100">
+
+                <fieldset>
+                    <legend>Preferred Contact Method:</legend>
+                    <input type="radio" id="contact-email" name="contact" value="email">
+                    <label for="contact-email">Email</label>
+                    <input type="radio" id="contact-phone" name="contact" value="phone">
+                    <label for="contact-phone">Phone</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Project Timeline:</legend>
+                    <input type="checkbox" id="asap" name="timeline" value="asap">
+                    <label for="asap">ASAP</label>
+                    <input type="checkbox" id="flexible" name="timeline" value="flexible">
+                    <label for="flexible">Flexible</label>
+                </fieldset>
             </form>
         </section>
     </main>
